@@ -5,19 +5,19 @@ from email.mime.text import MIMEText
 
 # me == my email address
 # you == recipient's email address
-me = "xxxxxxxx@gmail.com"
-you = "xxxxxxx@gmail.com"
+me = "naveevamsi@gmail.com"
+you = "naveevamsi@gmail.com"
 
 # Create message container - the correct MIME type is multipart/alternative.
 msg = MIMEMultipart('alternative')
-msg['Subject'] = "TEST mail"
+msg['subject'] = "TEST mail"
 msg['From'] = me
 msg['To'] = you
 msg.add_header('Content-Type', 'text/html')
 
 # Create the body of the message (a plain-text and an HTML version).
 # text = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.python.org"
-html = """hey 
+html = """hey hi
 """
 
 # Record the MIME types of both parts - text/plain and text/html.
@@ -36,6 +36,6 @@ mail.ehlo()
 
 mail.starttls()
 
-mail.login('email', 'password')
+mail.login('naveevamsi@gmail.com', 'iampnv971_peethala9441687463')
 mail.sendmail(me, you, msg.as_string())
 mail.quit()
