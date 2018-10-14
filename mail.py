@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 
 # me == my email address
 # you == recipient's email address
-me = "naveevamsi@gmail.com"
-you = "naveevamsi@gmail.com"
+me = "xxxxx@xxx.com"
+you = "xxxxx@xxx.com"
 
 # Create message container - the correct MIME type is multipart/alternative.
 msg = MIMEMultipart('alternative')
@@ -36,6 +36,6 @@ mail.ehlo()
 
 mail.starttls()
 
-mail.login('naveevamsi@gmail.com', 'iampnv971_peethala9441687463')
+mail.login('xxxxx@xxx.com', 'password')
 mail.sendmail(me, you, msg.as_string())
 mail.quit()
